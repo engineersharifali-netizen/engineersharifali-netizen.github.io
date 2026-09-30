@@ -36,6 +36,13 @@ body:after{content:"PLC  •  I/O  •  HMI  •  SCADA  •  VFD  •  SERVO  �
 .schematic.real-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.04);opacity:.94}
 .schematic.real-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,12,16,.05),rgba(4,12,16,.68))}
 .photo-label{position:absolute;left:18px;bottom:16px;z-index:2;color:#d9f7f2;font:800 10px ui-monospace,monospace;letter-spacing:.16em;text-shadow:0 1px 8px #000}
+</style><style>
+/* Subtle industrial motion */
+.schematic.real-photo img{animation:industrialZoom 12s ease-in-out infinite alternate}
+.schematic.real-photo:before{content:"";position:absolute;z-index:3;left:0;right:0;top:-12%;height:2px;background:linear-gradient(90deg,transparent,rgba(22,184,166,.05),rgba(77,236,220,.9),rgba(22,184,166,.05),transparent);box-shadow:0 0 14px rgba(77,236,220,.45);animation:scanLine 5s linear infinite;pointer-events:none}
+@keyframes industrialZoom{0%{transform:scale(1)}100%{transform:scale(1.045)}}
+@keyframes scanLine{0%{top:-8%}100%{top:108%}}
+@media(prefers-reduced-motion:reduce){.schematic.real-photo img,.schematic.real-photo:before{animation:none}}
 </style></style></style></head>
 <body><div class="root">
 <header class="nav"><div class="navin"><div class="brand">ALI<span>.</span>SHARIF</div><nav class="links"><a href="#services" data-en="Services" data-ku="خزمەتگوزارییەکان">Services</a><a href="#projects" data-en="Projects" data-ku="پڕۆژەکان">Projects</a><a href="#work" data-en="Work" data-ku="کارەکان">Work</a><a href="#about" data-en="About" data-ku="دەربارەی من">About</a><a class="hire" href="#contact" data-en="Start a project" data-ku="دەستپێکردنی پڕۆژە">Start a project</a><button class="lang" id="lang" type="button">کوردی</button></nav></div></header>
