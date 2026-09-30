@@ -37,6 +37,21 @@ body:after{content:"PLC  •  I/O  •  HMI  •  SCADA  •  VFD  •  SERVO  �
 @keyframes industrialZoom{0%{transform:scale(1)}100%{transform:scale(1.045)}}
 @keyframes scanLine{0%{top:-8%}100%{top:108%}}
 @media(prefers-reduced-motion:reduce){.schematic.real-photo img,.schematic.real-photo:before{animation:none}}
+</style><style>
+/* Hero industrial motion */
+.schematic{isolation:isolate}
+.schematic:before{content:"";position:absolute;z-index:2;left:12%;top:50%;width:76%;height:1px;background:linear-gradient(90deg,transparent 0 5%,rgba(40,199,181,.32) 18%,rgba(40,199,181,.85) 50%,rgba(40,199,181,.32) 82%,transparent 95%);box-shadow:0 0 9px rgba(40,199,181,.35);animation:signalFlow 3.8s linear infinite}
+.schematic:after{content:"";position:absolute;z-index:2;left:50%;top:12%;width:1px;height:76%;background:linear-gradient(180deg,transparent 0 5%,rgba(40,199,181,.25) 20%,rgba(40,199,181,.8) 50%,rgba(40,199,181,.25) 80%,transparent 95%);box-shadow:0 0 9px rgba(40,199,181,.3);animation:signalFlowV 3.8s linear infinite reverse}
+.node{transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.node:after{content:"";position:absolute;width:5px;height:5px;right:8px;top:8px;border-radius:50%;background:#16b8a6;box-shadow:0 0 8px #16b8a6;animation:statusPulse 1.8s ease-in-out infinite}
+.n1:after{animation-delay:.2s}.n2:after{animation-delay:.6s}.n3:after{animation-delay:1s}.n4:after{animation-delay:1.4s}
+.cpu{animation:cpuPulse 2.8s ease-in-out infinite}
+.schematic:hover .node{transform:translateY(-3px);border-color:#28c7b5aa;box-shadow:0 0 24px rgba(40,199,181,.18)}
+@keyframes signalFlow{0%{transform:scaleX(.08);transform-origin:left;opacity:.15}45%{transform:scaleX(1);opacity:1}100%{transform:scaleX(.08);transform-origin:right;opacity:.15}}
+@keyframes signalFlowV{0%{transform:scaleY(.08);transform-origin:top;opacity:.15}45%{transform:scaleY(1);opacity:1}100%{transform:scaleY(.08);transform-origin:bottom;opacity:.15}}
+@keyframes statusPulse{0%,100%{opacity:.3;box-shadow:0 0 3px #16b8a6}50%{opacity:1;box-shadow:0 0 12px #16b8a6}}
+@keyframes cpuPulse{0%,100%{box-shadow:0 0 0 rgba(40,199,181,0),0 0 28px rgba(40,199,181,.04)}50%{box-shadow:0 0 0 1px rgba(40,199,181,.12),0 0 32px rgba(40,199,181,.13)}}
+@media(prefers-reduced-motion:reduce){.schematic:before,.schematic:after,.node:after,.cpu{animation:none}}
 </style></style></style></head>
 <body><div class="root">
 <header class="nav"><div class="navin"><div class="brand">ALI<span>.</span>SHARIF</div><nav class="links"><a href="#services" data-en="Services" data-ku="خزمەتگوزارییەکان">Services</a><a href="#projects" data-en="Projects" data-ku="پڕۆژەکان">Projects</a><a href="#work" data-en="Work" data-ku="کارەکان">Work</a><a href="#about" data-en="About" data-ku="دەربارەی من">About</a><a class="hire" href="#contact" data-en="Start a project" data-ku="دەستپێکردنی پڕۆژە">Start a project</a><button class="lang" id="lang" type="button">کوردی</button></nav></div></header>
